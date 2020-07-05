@@ -35,13 +35,37 @@ public class studentInterface {
 				System.out.println("---------------------------------");
 				System.out.println("Add New Student");
 				System.out.println("---------------------------------");
-				Student student1 = new Student();
 				
+				Student student1 = new Student();
 				Person person1  = new Person();
-		
-				System.out.println("Enter Person id: ");
-				int personid = scan.nextInt();
-				student1.setPERSON_ID(personid);
+
+				System.out.println("Enter Student For Name: ");
+				String forname = scan.nextLine();
+				forname+=scan.nextLine();
+				student1.setFOR_NAME(forname);
+
+				System.out.println("Enter Student Sur Name: ");
+				String surname = scan.nextLine();
+				surname+=scan.nextLine();
+				student1.setSUR_NAME(surname);
+				
+				System.out.println("Enter Student Gender: ");
+				String gender = scan.nextLine();
+				gender+=scan.nextLine();
+				student1.setGENDER(gender);
+
+				System.out.println("Enter Student Age: ");
+				int age = scan.nextInt();
+				student1.setAGE(age);
+
+				System.out.println("Enter Student Address: ");
+				String address = scan.nextLine();
+				address+=scan.nextLine();
+				student1.setADDRESS(address);
+//
+//				System.out.println("Enter Person id: ");
+//				int personid = scan.nextInt();
+//				student1.setPERSON_ID(personid);
 				
 				System.out.println("Enter Student Roll No: ");
 				String rollno = scan.nextLine();

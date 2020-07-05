@@ -23,13 +23,18 @@ public class studentData {
 			
 			while ((line =  bufferreader.readLine()) != null){
 				Student student = new Student();
-				
+				//Person person = new Person();
 				String[] studentRow = line.split(",");
 				
 				student.setSTUDENT_ID(Integer.parseInt(studentRow[0]));
-				student.setSTUDENT_ROLLNO(studentRow[1]);
-				student.setSTUDY_PROGRAM(studentRow[2]);
-				student.setSTUDY_YEAR(studentRow[3]);
+				student.setFOR_NAME(studentRow[1]);
+				student.setSUR_NAME(studentRow[2]);
+				student.setGENDER(studentRow[3]);
+				student.setAGE(Integer.parseInt(studentRow[4]));
+				student.setADDRESS(studentRow[5]);
+				student.setSTUDENT_ROLLNO(studentRow[6]);
+				student.setSTUDY_PROGRAM(studentRow[7]);
+				student.setSTUDY_YEAR(studentRow[8]);
 				
 				
 				students.add(student);
@@ -62,10 +67,15 @@ public class studentData {
 				if(Integer.parseInt(studentRow[0]) == student_ID) {
 				
 					student.setSTUDENT_ID(Integer.parseInt(studentRow[0]));
-					student.setSTUDENT_ROLLNO(studentRow[1]);
-					student.setSTUDY_PROGRAM(studentRow[2]);
-					student.setSTUDY_YEAR(studentRow[3]);
-						
+					student.setFOR_NAME(studentRow[1]);
+					student.setSUR_NAME(studentRow[2]);
+					student.setGENDER(studentRow[3]);
+					student.setAGE(Integer.parseInt(studentRow[4]));
+					student.setADDRESS(studentRow[5]);
+					student.setSTUDENT_ROLLNO(studentRow[6]);
+					student.setSTUDY_PROGRAM(studentRow[7]);
+					student.setSTUDY_YEAR(studentRow[8]);
+							
 				return student;
 				}
 				
@@ -98,11 +108,15 @@ public class studentData {
 				if (studentRow[1].contains(search) == true) {
 					
 					student.setSTUDENT_ID(Integer.parseInt(studentRow[0]));
-					student.setSTUDENT_ROLLNO(studentRow[1]);
-					student.setSTUDY_PROGRAM(studentRow[2]);
-					student.setSTUDY_YEAR(studentRow[3]);
-					
-					
+					student.setFOR_NAME(studentRow[1]);
+					student.setSUR_NAME(studentRow[2]);
+					student.setGENDER(studentRow[3]);
+					student.setAGE(Integer.parseInt(studentRow[4]));
+					student.setADDRESS(studentRow[5]);
+					student.setSTUDENT_ROLLNO(studentRow[6]);
+					student.setSTUDY_PROGRAM(studentRow[7]);
+					student.setSTUDY_YEAR(studentRow[8]);
+										
 				students.add(student);
 				
 			}
